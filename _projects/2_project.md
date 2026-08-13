@@ -1,81 +1,42 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Hotel Haven
+description: Predicting hotel booking cancellations with Random Forest
+img: assets/img/hotel-haven-cover.png
 importance: 2
-category: work
-giscus_comments: true
+category: machine-learning
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Hotel booking cancellations create real operational headaches - overbooked or underbooked rooms, wasted marketing spend, and unreliable revenue forecasting. **Hotel Haven** is a classification model that predicts which bookings are likely to be cancelled, giving hotels the chance to intervene early (targeted confirmation emails, flexible rebooking offers, overbooking strategy adjustments).
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+### The problem
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+Hotels lose significant revenue to last-minute cancellations, but most reservation systems treat every booking as equally likely to go ahead. Without a way to flag high-risk bookings in advance, hotels can't act until it's too late to recover the lost revenue.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+### Approach
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+- **Data cleaning & EDA**: Explored a hotel bookings dataset covering lead time, deposit type, market segment, and customer history to identify patterns behind cancellations
+- **Feature engineering**: Built features capturing booking lead time, prior cancellation history, and deposit/payment behaviour — the strongest early signals of cancellation risk
+- **Modelling**: Trained a Random Forest classifier, tuned via `GridSearchCV` across tree depth, estimator count, and minimum leaf samples
+- **Delivery**: Packaged findings into a 15-slide stakeholder presentation translating model output into concrete operational recommendations
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/hotel-haven-confusion-matrix.png" title="Confusion matrix" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Confusion matrix showing model performance on the held-out test set.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### Results
 
-{% raw %}
+- **Accuracy: 90.21%** - the model correctly classifies the large majority of bookings as cancelled or not
+- **AUC: 95.39%** - strong discrimination between the two classes, meaning the model reliably ranks higher-risk bookings above lower-risk ones
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+### Tools
 
-{% endraw %}
+`Python` `scikit-learn` `Random Forest` `GridSearchCV`
+
+---
+*Part of the Data Science Internship programme with Amdari.io / 10Alytics.*
