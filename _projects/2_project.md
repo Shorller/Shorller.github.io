@@ -41,12 +41,16 @@ The existing system gave no insight into *why* customers were cancelling, and no
 - Flag bookings made 90+ days in advance as high risk for proactive retention outreach
 - Prompt guests to add special requests at booking - even one request roughly halves cancellation likelihood
 - Apply stricter deposit policies for Online bookings and long lead-time reservations
-- Plan for a seasonal cancellation peak (April-October, especially July at 45%)
+- Plan for a seasonal cancellation peak (April–October, especially July at 45%)
 - Investigate Room Type 6, which cancelled at 42.1% - well above other room types
 
 ### Tools
 
 `Python` `pandas` `scikit-learn` `Random Forest` `XGBoost` `Logistic Regression`
+
+### Links
+
+- **Full presentation**: [Download PDF](/assets/pdf/Hotel_Haven_Presentation_Oluwashola.pdf)
 
 ---
 *10Alytics Machine Learning Capstone Project*
