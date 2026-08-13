@@ -7,18 +7,18 @@ importance: 2
 category: machine-learning
 ---
 
-Hotel booking cancellations create real operational headaches - overbooked or underbooked rooms, wasted marketing spend, and unreliable revenue forecasting. **Hotel Haven** is a classification model that predicts which bookings are likely to be cancelled, giving hotels the chance to intervene early (targeted confirmation emails, flexible rebooking offers, overbooking strategy adjustments).
+Hotel Haven, a luxury hotel chain, was struggling with high cancellation rates - leading to lost revenue, unfilled rooms, and disrupted staffing and resource planning. This project builds a predictive model to flag high-risk bookings before they cancel, so the hotel can act ahead of time rather than reactively.
 
 ### The problem
 
-Hotels lose significant revenue to last-minute cancellations, but most reservation systems treat every booking as equally likely to go ahead. Without a way to flag high-risk bookings in advance, hotels can't act until it's too late to recover the lost revenue.
+The existing system gave no insight into *why* customers were cancelling, and no way to identify high-risk bookings in advance. Hotel Haven wanted to better understand booking patterns and reduce cancellations without a clear, data-driven way to do it.
 
 ### Approach
 
-- **Data cleaning & EDA**: Explored a hotel bookings dataset covering lead time, deposit type, market segment, and customer history to identify patterns behind cancellations
-- **Feature engineering**: Built features capturing booking lead time, prior cancellation history, and deposit/payment behaviour — the strongest early signals of cancellation risk
-- **Modelling**: Trained a Random Forest classifier, tuned via `GridSearchCV` across tree depth, estimator count, and minimum leaf samples
-- **Delivery**: Packaged findings into a 15-slide stakeholder presentation translating model output into concrete operational recommendations
+- **Data cleaning**: Worked with 36,285 bookings across 17 original features. Capped invalid binary anomalies, removed 37 rows with an impossible date (29 Feb 2018, not a leap year), and confirmed no missing values or duplicates
+- **EDA**: Explored univariate and bivariate patterns - lead time, price, special requests, booking channel, and room type all showed clear relationships with cancellation
+- **Feature engineering**: Expanded to 25 features, including lead time buckets, price-per-night, weekend/stay-structure flags, and guest commitment indicators; dropped features with severe multicollinearity (0.93 correlation)
+- **Modelling**: Compared Logistic Regression, Decision Tree, Random Forest, and XGBoost on an 80/20 stratified split; selected and tuned **Random Forest** as the best performer across all three evaluation metrics
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
@@ -26,17 +26,27 @@ Hotels lose significant revenue to last-minute cancellations, but most reservati
     </div>
 </div>
 <div class="caption">
-    Confusion matrix showing model performance on the held-out test set.
+    Confusion matrix for the tuned Random Forest model on the held-out test set.
 </div>
 
 ### Results
 
-- **Accuracy: 90.21%** - the model correctly classifies the large majority of bookings as cancelled or not
-- **AUC: 95.39%** - strong discrimination between the two classes, meaning the model reliably ranks higher-risk bookings above lower-risk ones
+- **Accuracy: 90.21%** · **ROC-AUC: 95.39%** · **F1 Score: 90%**
+- **Lead time was the strongest predictor** - cancelled bookings had a median lead time of 122 days vs 39 days for completed bookings, and lead-time features alone accounted for over 31% of the model's decisions
+- **Special requests strongly reduced cancellation risk** - dropping from 43.2% with no requests to 0% with 3 or more
+- **Booking channel mattered** - Online bookings cancelled at 36.5% vs just 10.9% for Corporate
+
+### Recommendations delivered
+
+- Flag bookings made 90+ days in advance as high risk for proactive retention outreach
+- Prompt guests to add special requests at booking - even one request roughly halves cancellation likelihood
+- Apply stricter deposit policies for Online bookings and long lead-time reservations
+- Plan for a seasonal cancellation peak (April-October, especially July at 45%)
+- Investigate Room Type 6, which cancelled at 42.1% - well above other room types
 
 ### Tools
 
-`Python` `scikit-learn` `Random Forest` `GridSearchCV`
+`Python` `pandas` `scikit-learn` `Random Forest` `XGBoost` `Logistic Regression`
 
 ---
-*Part of the Data Science Internship programme with Amdari.io / 10Alytics.*
+*10Alytics Machine Learning Capstone Project*
