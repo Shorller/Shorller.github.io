@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ShopEase
+title: Amazon Reviews Sentiment Analysis
 description: End-to-end NLP sentiment classification with DistilBERT
 img: assets/img/amazon-sentiment-cover.png
 importance: 3
@@ -8,6 +8,8 @@ category: nlp
 ---
 
 Understanding customer sentiment at scale is a core challenge for any e-commerce business. This project delivers an **end-to-end NLP pipeline** that classifies Amazon product reviews by sentiment, built for a fictional client, ShopEase Europe, and deployed as a live interactive demo.
+
+**Live demo:** [amazon-44rsuekqigv6azxzyvsmbe.streamlit.app](https://amazon-44rsuekqigv6azxzyvsmbe.streamlit.app/)
 
 ### The problem
 
@@ -28,11 +30,6 @@ Manually reading through thousands of reviews to gauge customer sentiment doesn'
 <div class="caption">
     Live Streamlit demo interface for the sentiment classifier.
 </div>
-
-### Links
-
-- **GitHub**: [Shorller/Amazon](https://github.com/Shorller/Amazon)
-- **Model**: [shorller/distilbert-sentiment](https://huggingface.co/shorller/distilbert-sentiment) on Hugging Face
 
 ### Tools
 
