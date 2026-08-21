@@ -3,7 +3,7 @@ layout: page
 title: Amazon Reviews Sentiment Analysis
 description: End-to-end NLP sentiment classification with DistilBERT
 img: assets/img/amazon-sentiment-cover.png
-importance: 3
+importance: 2
 category: nlp
 ---
 
