@@ -1,6 +1,8 @@
 ---
 layout: about
-title: about
+title: <h1 class="post-title">
+  <strong>Oluwashola</strong> Rufai
+</h1>
 permalink: /
 subtitle: Data Scientist & Analyst | Statistics · Machine Learning · Sustainability
 
