@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: Oluwashola Rufai
 permalink: /
 subtitle: Data Scientist & Analyst | Statistics · Machine Learning · Sustainability
 
