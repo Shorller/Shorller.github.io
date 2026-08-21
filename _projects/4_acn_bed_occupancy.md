@@ -3,7 +3,7 @@ layout: page
 title: Bed Occupancy Forecast Viewer
 description: Predictive bed capacity management for Albion Care Network Healthcare
 img: assets/img/acn-cover.png
-importance: 4
+importance: 1
 category: analytics
 ---
 
