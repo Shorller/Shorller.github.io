@@ -5,7 +5,7 @@ permalink: /projects/
 description: A selection of my data science, machine learning, and analytics projects.
 nav: true
 nav_order: 2
-display_categories: [machine-learning, nlp, analytics]
+display_categories: false
 horizontal: false
 ---
 
