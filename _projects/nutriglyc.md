@@ -3,7 +3,7 @@ layout: page
 title: NutriGlyc AI
 description: Predicting post-meal glucose spikes with XGBoost and explainable AI
 img: assets/img/nutriglyc-cover.png
-importance: 1
+importance: 4
 category: machine-learning
 ---
 
