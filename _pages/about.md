@@ -16,6 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
+# Oluwashola Rufai
 I'm a data scientist and analyst with a background in statistics, public-sector analysis, sustainability research, and applied machine learning. My work focuses on using data to understand complex problems, communicate evidence clearly, and develop practical, data-driven solutions.
 
 I currently work as a Customer Service Advisor and recently completed a Data Science Internship at [Amdari.io](https://amdari.io), where I worked on applied machine learning projects spanning predictive modelling, classification, natural language processing, model explainability, and data visualisation.
