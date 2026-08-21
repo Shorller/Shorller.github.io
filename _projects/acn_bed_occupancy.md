@@ -12,8 +12,6 @@ I developed an end-to-end forecasting and alerting system to predict ward-level 
 
 *Albion Care Network (ACN) is a simulated healthcare network and the project uses synthetic data developed for this data science project.*
 
-**Live demo:** [Explore the Streamlit application](https://acn-project-efrzkuqh3p9gsp56qrmnby.streamlit.app/)
-
 ### The problem
 
 Bed demand can vary considerably across wards and over time. Relying on historical averages or responding only when capacity pressure is already visible can make it difficult to anticipate emerging demand.
