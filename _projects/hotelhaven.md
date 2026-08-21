@@ -3,7 +3,7 @@ layout: page
 title: Hotel Haven
 description: Predicting hotel booking cancellations with Random Forest
 img: assets/img/hotel-haven-cover.png
-importance: 2
+importance: 3
 category: machine-learning
 ---
 
