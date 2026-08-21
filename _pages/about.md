@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Data Scientist & Analyst | Statistics · Machine Learning · Sustainability
+subtitle: 
 
 profile:
   align: right
