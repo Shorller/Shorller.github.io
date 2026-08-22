@@ -1,12 +1,11 @@
 ---
-
 layout: page
 title: Amazon Reviews Sentiment Analysis
 description: End-to-end NLP sentiment classification using fine-tuned DistilBERT
 img: assets/img/amazon-sentiment-cover.png
 importance: 2
 category: nlp
--------------
+---
 
 I developed an end-to-end NLP pipeline for classifying customer reviews as **positive, neutral, or negative** using a fine-tuned DistilBERT transformer model. The project takes the analysis from raw review text through model fine-tuning and deployment, with an interactive Streamlit application and Power BI dashboard for exploring wider sentiment patterns.
 
