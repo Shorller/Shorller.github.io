@@ -1,5 +1,4 @@
 ---
-
 layout: page
 title: Hotel Haven
 description: Predicting hotel booking cancellations using Random Forest and customer booking patterns
