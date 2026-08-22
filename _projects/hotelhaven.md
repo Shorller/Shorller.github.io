@@ -1,56 +1,138 @@
 ---
+
 layout: page
 title: Hotel Haven
-description: Predicting hotel booking cancellations with Random Forest
+description: Predicting hotel booking cancellations using Random Forest and customer booking patterns
 img: assets/img/hotel-haven-cover.png
 importance: 3
 category: machine-learning
----
+--------------------------
 
-Hotel Haven, a luxury hotel chain, was struggling with high cancellation rates - leading to lost revenue, unfilled rooms, and disrupted staffing and resource planning. This project builds a predictive model to flag high-risk bookings before they cancel, so the hotel can act ahead of time rather than reactively.
+I developed a machine learning model to predict hotel booking cancellations and identify the booking characteristics most strongly associated with cancellation risk. The project combined data cleaning, exploratory analysis, feature engineering, model comparison and business recommendations.
+
+The final dataset contained **36,248 bookings**, with approximately one-third ending in cancellation.
 
 ### The problem
 
-The existing system gave no insight into *why* customers were cancelling, and no way to identify high-risk bookings in advance. Hotel Haven wanted to better understand booking patterns and reduce cancellations without a clear, data-driven way to do it.
+High cancellation rates can create uncertainty around room availability, staffing and revenue planning. The aim of the project was to determine whether booking information available before arrival could be used to identify reservations with a higher likelihood of cancellation.
 
-### Approach
+The analysis focused on questions such as:
 
-- **Data cleaning**: Worked with 36,285 bookings across 17 original features. Capped invalid binary anomalies, removed 37 rows with an impossible date (29 Feb 2018, not a leap year), and confirmed no missing values or duplicates
-- **EDA**: Explored univariate and bivariate patterns - lead time, price, special requests, booking channel, and room type all showed clear relationships with cancellation
-- **Feature engineering**: Expanded to 25 features, including lead time buckets, price-per-night, weekend/stay-structure flags, and guest commitment indicators; dropped features with severe multicollinearity (0.93 correlation)
-- **Modelling**: Compared Logistic Regression, Decision Tree, Random Forest, and XGBoost on an 80/20 stratified split; selected and tuned **Random Forest** as the best performer across all three evaluation metrics
+* Does booking lead time affect cancellation risk?
+* Are particular booking channels associated with higher cancellation rates?
+* Do room type, price and seasonal patterns matter?
+* Are guest commitment indicators, such as special requests, associated with lower cancellation rates?
+
+### Data preparation & feature engineering
+
+The original dataset contained **36,285 bookings across 17 features**.
+
+During cleaning and preparation, I:
+
+* Identified and removed **37 records containing an impossible date — 29 February 2018**
+* Checked for missing values and duplicates
+* Reviewed categorical and numerical distributions for anomalies
+* Removed overlapping variables with severe multicollinearity, including features with correlations as high as **0.93**
+* Expanded the modelling dataset to **25 engineered features**
+
+Engineered features included:
+
+* Lead-time buckets and log-transformed lead time
+* Total nights and long-stay indicators
+* Weekend booking and stay indicators
+* Price per night and price bands
+* Reservation month and day of week
+* Special-request indicators
+* Repeat-guest indicators
+
+### Exploratory analysis
+
+Several clear patterns emerged before modelling.
+
+* **Lead time showed the strongest relationship with cancellation.** Cancelled bookings had a median lead time of **122 days**, compared with **39 days** for completed bookings.
+* **Online bookings had a 36.5% cancellation rate**, compared with **10.9% for Corporate bookings**.
+* Bookings with **no special requests cancelled at 43.2%**, compared with 23.8% for bookings with one request and 14.6% for those with two.
+* **Room Type 6** had the highest cancellation rate at **42.1%**.
+* Cancellation risk also showed a seasonal pattern, with **July recording the highest monthly rate at 45%**.
+
+These patterns were treated as associations rather than evidence that any one factor directly causes cancellation.
+
+### Model development
+
+I compared four classification models using an **80/20 train-test split**:
+
+| Model               |   Accuracy |    ROC-AUC |   F1 Score |
+| ------------------- | ---------: | ---------: | ---------: |
+| Logistic Regression |     80.81% |     76.56% |     80.44% |
+| Decision Tree       |     86.57% |     85.08% |     86.61% |
+| Random Forest       | **89.83%** | **87.60%** | **89.74%** |
+| XGBoost             |     88.81% |     86.52% |     88.72% |
+
+Random Forest produced the strongest overall performance and was selected for further tuning.
+
+### Final model performance
+
+After tuning, the Random Forest classifier achieved:
+
+* **Accuracy: 90.21%**
+* **ROC-AUC: 95.39%**
+* **F1 Score: 90%**
+
+On the held-out test set, the model correctly classified **6,540 of 7,250 bookings**.
+
+Its confusion matrix contained:
+
+* **4,600 true negatives** — correctly identified completed bookings
+* **1,940 true positives** — correctly identified cancellations
+* **273 false positives**
+* **437 false negatives**
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/hotel-haven-confusion-matrix.png" title="Confusion matrix" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/hotel-haven-confusion-matrix.png" title="Random Forest confusion matrix" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Confusion matrix for the tuned Random Forest model on the held-out test set.
+    Confusion matrix for the tuned Random Forest classifier on the held-out test set.
 </div>
 
-### Results
+### Feature importance
 
-- **Accuracy: 90.21%** · **ROC-AUC: 95.39%** · **F1 Score: 90%**
-- **Lead time was the strongest predictor** - cancelled bookings had a median lead time of 122 days vs 39 days for completed bookings, and lead-time features alone accounted for over 31% of the model's decisions
-- **Special requests strongly reduced cancellation risk** - dropping from 43.2% with no requests to 0% with 3 or more
-- **Booking channel mattered** - Online bookings cancelled at 36.5% vs just 10.9% for Corporate
+Lead-time features were the strongest contributors to the final model:
 
-### Recommendations delivered
+* `log_lead_time`: **0.162**
+* `lead_time`: **0.153**
+* `average_price`: **0.114**
+* `price_per_night`: **0.078**
+* `reservation_month`: **0.066**
+* `market_segment_type`: **0.061**
 
-- Flag bookings made 90+ days in advance as high risk for proactive retention outreach
-- Prompt guests to add special requests at booking - even one request roughly halves cancellation likelihood
-- Apply stricter deposit policies for Online bookings and long lead-time reservations
-- Plan for a seasonal cancellation peak (April–October, especially July at 45%)
-- Investigate Room Type 6, which cancelled at 42.1% - well above other room types
+Lead-time variables alone accounted for more than **31% of total feature importance**, reinforcing the patterns identified during exploratory analysis.
+
+### Business recommendations
+
+Based on the analysis, I recommended that Hotel Haven:
+
+* Prioritise bookings made **90+ days in advance** for additional monitoring or retention activity
+* Test targeted reminders or flexible rescheduling options for bookings showing higher-risk characteristics
+* Review deposit and cancellation policies for higher-risk booking segments, particularly Online reservations
+* Incorporate seasonal cancellation patterns into capacity and revenue planning
+* Investigate the unusually high cancellation rate associated with **Room Type 6**
+* Explore whether special-request activity can be used as a useful commitment signal, while recognising that the observed relationship does not establish causation
+
+### Limitations
+
+* The model is based on historical booking behaviour and may need retraining as patterns change
+* Customer demographics and reasons for cancellation were not available
+* Some categories contained relatively small numbers of bookings
+* The analysis identifies predictive relationships, not causal effects
 
 ### Tools
 
-`Python` `pandas` `scikit-learn` `Random Forest` `XGBoost` `Logistic Regression`
+`Python` `pandas` `NumPy` `scikit-learn` `Random Forest` `XGBoost` `Logistic Regression` `Matplotlib`
 
 ### Links
 
-- **Full presentation**: [Download PDF](/assets/pdf/Hotel_Haven_Presentation_Oluwashola.pdf)
+* **Project presentation:** [View presentation PDF](/assets/pdf/Hotel_Haven_Presentation_Oluwashola.pdf)
 
----
 *10Alytics Machine Learning Capstone Project*
