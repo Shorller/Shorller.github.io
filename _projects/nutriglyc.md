@@ -5,7 +5,7 @@ description: Glucose spike prediction using tuned XGBoost and SHAP model explain
 img: assets/img/nutriglyc-cover.png
 importance: 4
 category: machine-learning
---------------------------
+---
 
 I developed a machine learning pipeline to explore whether dietary, clinical and lifestyle information could be used to predict post-meal glucose spike events. The project combined data-quality assessment, feature engineering, model comparison, hyperparameter tuning and SHAP explainability.
 
