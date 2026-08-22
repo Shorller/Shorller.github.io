@@ -121,6 +121,7 @@ These findings describe relationships learned from this dataset and should not b
 
 ### Links
 
-* **Source code:** [View project on GitHub](https://github.com/Shorller/Amdari_P1)
+- **Live application:** [Open Streamlit app](https://nutriglyc-glucose-spike.streamlit.app/)
+- **Source code:** [View project on GitHub](https://github.com/Shorller/Amdari_P1)
 
 *Data Science Internship project.*
