@@ -1,5 +1,4 @@
 ---
-
 layout: page
 title: NutriGlyc AI
 description: Glucose spike prediction using tuned XGBoost and SHAP model explainability
