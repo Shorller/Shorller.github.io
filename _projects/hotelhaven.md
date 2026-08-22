@@ -133,6 +133,8 @@ Based on the analysis, I recommended that Hotel Haven:
 
 ### Links
 
+* **Live application:** [Open Streamlit app](https://hotel-haven-cancellation-risk.streamlit.app/)
+* **Source code:** [View project on GitHub](https://github.com/Shorller/Hotel-Haven)
 * **Project presentation:** [View presentation PDF](/assets/pdf/Hotel_Haven_Presentation_Oluwashola.pdf)
 
 *10Alytics Machine Learning Capstone Project*
