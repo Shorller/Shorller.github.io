@@ -5,7 +5,7 @@ description: Predicting hotel booking cancellations using Random Forest and cust
 img: assets/img/hotel-haven-cover.png
 importance: 3
 category: machine-learning
---------------------------
+---
 
 I developed a machine learning model to predict hotel booking cancellations and identify the booking characteristics most strongly associated with cancellation risk. The project combined data cleaning, exploratory analysis, feature engineering, model comparison and business recommendations.
 
