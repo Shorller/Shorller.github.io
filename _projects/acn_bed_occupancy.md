@@ -1,12 +1,11 @@
 ---
-
 layout: page
 title: Hospital Bed Occupancy Forecasting & Capacity Management
 description: Ward-level bed occupancy forecasting, capacity alerts, and model monitoring using SARIMAX and XGBoost
 img: assets/img/acn-cover.png
 importance: 1
 category: analytics
--------------------
+---
 
 I developed an end-to-end forecasting and alerting system to predict ward-level bed occupancy 7, 14, and 30 days ahead across 40 wards in five hospitals. The system combines ward-specific forecasting with capacity alerts and model monitoring, providing a forward-looking alternative to planning based primarily on historical averages.
 
