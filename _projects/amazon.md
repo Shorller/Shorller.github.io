@@ -23,12 +23,12 @@ I fine-tuned **DistilBERT** for three-class sentiment classification using clean
 
 The workflow included:
 
-* Preparing and cleaning review text for modelling
-* Tokenising text using the Hugging Face tokenizer
-* Fine-tuning DistilBERT for **negative, neutral, and positive** sentiment classification
-* Publishing the trained model through Hugging Face
-* Building single-review and batch prediction workflows
-* Returning sentiment predictions with model confidence scores
+- Preparing and cleaning review text for modelling
+- Tokenising text using the Hugging Face tokenizer
+- Fine-tuning DistilBERT for **negative, neutral, and positive** sentiment classification
+- Publishing the trained model through Hugging Face
+- Building single-review and batch prediction workflows
+- Returning sentiment predictions with model confidence scores
 
 For batch analysis, the application accepts CSV files and can classify large collections of reviews, with results available for further analysis and download.
 
@@ -52,12 +52,12 @@ I built and deployed an interactive **Streamlit application** so users could tes
 
 The application supports:
 
-* Individual review classification
-* Prediction confidence scores
-* CSV batch processing
-* Sentiment-distribution visualisations
-* Product-category comparisons
-* Downloadable prediction results
+- Individual review classification
+- Prediction confidence scores
+- CSV batch processing
+- Sentiment-distribution visualisations
+- Product-category comparisons
+- Downloadable prediction results
 
 Building the deployment also involved resolving practical engineering issues, including removing large model files from Git history and addressing Streamlit Cloud permissions.
 
@@ -76,11 +76,11 @@ Alongside the classifier, I developed a **Power BI dashboard** analysing 20,159 
 
 Key findings included:
 
-* **70% of reviews were classified as negative**, compared with 26% positive and 4% neutral
-* Delivery, refunds and returns were prominent themes within negative feedback
-* **Sports** generated high volumes of both positive reviews and delivery/service complaints, indicating high engagement alongside inconsistent customer experiences
-* **Home & Living** recorded the lowest average sentiment score at **-0.48**
-* The **US and Great Britain** generated the largest overall review volumes, while India and Denmark had comparatively higher proportions of positive sentiment
+- **70% of reviews were classified as negative**, compared with 26% positive and 4% neutral
+- Delivery, refunds and returns were prominent themes within negative feedback
+- **Sports** generated high volumes of both positive reviews and delivery/service complaints, indicating high engagement alongside inconsistent customer experiences
+- **Home & Living** recorded the lowest average sentiment score at **-0.48**
+- The **US and Great Britain** generated the largest overall review volumes, while India and Denmark had comparatively higher proportions of positive sentiment
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
@@ -97,6 +97,6 @@ Key findings included:
 
 ### Links
 
-* **Live application:** [Open Streamlit app](https://amazon-44rsuekqigv6azxzyvsmbe.streamlit.app/)
-* **Source code:** [View project on GitHub](https://github.com/Shorller/Amazon)
-* **Power BI dashboard:** [View dashboard PDF](/assets/pdf/Amazon_Sentiment_Analysis.pdf)
+- **Live application:** [Open Streamlit app](https://amazon-44rsuekqigv6azxzyvsmbe.streamlit.app/)
+- **Source code:** [View project on GitHub](https://github.com/Shorller/Amazon)
+- **Power BI dashboard:** [View dashboard PDF](/assets/pdf/Amazon_Sentiment_Analysis.pdf)
