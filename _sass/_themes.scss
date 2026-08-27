@@ -1,0 +1,59 @@
+/* Soft Taupe & Dusty Rose */
+
+:root {
+  --portfolio-background: #fbf8f6;
+  --portfolio-surface: #ffffff;
+  --portfolio-text: #2d292a;
+  --portfolio-muted: #746b6c;
+  --portfolio-rose: #b4777c;
+  --portfolio-rose-dark: #925d64;
+  --portfolio-border: #e8deda;
+
+  --global-theme-color: #925d64;
+  --global-hover-color: #b4777c;
+  --global-text-color: #2d292a;
+  --global-bg-color: #fbf8f6;
+}
+
+body {
+  background-color: var(--portfolio-background);
+  color: var(--portfolio-text);
+}
+
+a {
+  color: var(--portfolio-rose-dark);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--portfolio-rose);
+}
+
+.navbar .nav-link.active {
+  color: var(--portfolio-rose-dark) !important;
+}
+
+.card {
+  background-color: var(--portfolio-surface);
+  border-color: var(--portfolio-border);
+}
+
+.profile img {
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(45, 41, 42, 0.08);
+}
+
+.publications h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+}
+
+.publications h2::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 2px;
+  margin-top: 0.35rem;
+  background: var(--portfolio-rose);
+}
