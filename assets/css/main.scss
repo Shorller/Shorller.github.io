@@ -84,13 +84,17 @@ body {
   line-height: 1.72;
 }
 
-/* Smaller subtitle directly under the name */
-.post-header > .desc {
-  font-size: 0.82rem !important;
-  line-height: 1.35;
-  color: var(--global-text-color-light);
-  margin-top: 0.2rem;
-  margin-bottom: 1.35rem;
+/* About-page subtitle directly below the name */
+.post-header h4,
+.post-header .desc {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 0.78rem !important;
+  font-weight: 400 !important;
+  line-height: 1.35 !important;
+  letter-spacing: 0 !important;
+  margin-top: 0.2rem !important;
+  margin-bottom: 1.4rem !important;
+  color: var(--global-text-color-light) !important;
 }
 
 /* Refined navbar */
