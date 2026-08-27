@@ -1,81 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap");
+/*******************************************************************************
+ * Typography
+ * Serif pairing to match the "Classy & Beautiful" portfolio mockup
+ ******************************************************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap");
 
 body {
-  font-family: "DM Sans", Arial, sans-serif;
-  font-size: 16.5px;
-  line-height: 1.72;
+  font-family: "Lora", Georgia, "Times New Roman", serif;
 }
 
-h1 {
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(3rem, 6vw, 4.4rem);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title,
+.page-title,
+.publication-title {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   font-weight: 600;
-  line-height: 1.05;
-  letter-spacing: -0.025em;
-  margin-bottom: 0.55rem;
 }
 
-h2 {
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(2rem, 3.5vw, 2.6rem);
-  font-weight: 600;
-  line-height: 1.15;
-  margin-top: 2.4rem;
-  margin-bottom: 1rem;
+// Large name heading on the about page (rendered as an H1 in the page body)
+.post h1:first-of-type,
+article h1:first-of-type {
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
-h3 {
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: clamp(1.55rem, 2.5vw, 1.9rem);
-  font-weight: 600;
-  line-height: 1.2;
-  margin-top: 2.1rem;
-  margin-bottom: 0.8rem;
-}
-
-/* Smaller subtitle under your name */
-.post-header .desc,
 .subtitle,
-header .subtitle {
-  font-family: "DM Sans", Arial, sans-serif;
-  font-size: 0.98rem !important;
-  font-weight: 400;
-  line-height: 1.4;
-  opacity: 0.78;
-  margin-bottom: 1.7rem;
-}
-
-p,
-li {
-  font-size: 1rem;
-}
-
-p {
-  line-height: 1.75;
-  margin-bottom: 1.2rem;
-}
-
-li {
-  line-height: 1.65;
-}
-
-.navbar,
-.navbar a,
-.nav-link {
-  font-family: "DM Sans", Arial, sans-serif;
-}
-
-.nav-link {
-  font-size: 0.96rem;
-  font-weight: 500;
-}
-
-.caption {
-  font-size: 0.88rem;
-  line-height: 1.5;
+.post-description,
+.profile .address {
+  font-family: "Lora", Georgia, serif;
   font-style: italic;
 }
 
-table {
-  font-size: 0.94rem;
+.navbar-brand,
+.nav-link {
+  font-family: "Lora", Georgia, serif;
 }
