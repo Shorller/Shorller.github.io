@@ -146,10 +146,11 @@ body:has(.projects) h1 {
 }
 
 /* Subtitle under Projects */
+.post-description,
 .projects-page .post-description,
 body:has(.projects) .post-description {
   color: #925d64 !important;
-  font-size: 0.95rem;
+  font-size: 0.9rem !important;
   line-height: 1.5;
   margin-bottom: 2rem;
 }
@@ -182,4 +183,23 @@ body:has(.projects) .post-description {
   border: 1px solid #e8deda;
   border-radius: 10px;
   box-shadow: 0 6px 18px rgba(45, 41, 42, 0.06);
+}
+
+/* Project card descriptions */
+.projects .card p,
+.projects .card .card-text,
+.projects .card .description {
+  color: #746b6c !important;
+  font-size: 0.84rem !important;
+  line-height: 1.65 !important;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 0.55rem;
+  margin-bottom: 1rem;
+}
+
+/* Make project titles a little more compact */
+.projects .card-title {
+  font-size: clamp(1.35rem, 1.8vw, 1.7rem) !important;
+  line-height: 1.15;
 }
