@@ -17,7 +17,7 @@ social: true # includes social icons at the bottom of the page
 ---
 
 # Oluwashola Rufai
-#### Data Scientist & Analyst | Statistics · Machine Learning · Sustainability
+###### Data Scientist & Analyst | Statistics · Machine Learning · Sustainability
 
 I'm a data scientist and analyst with a background in statistics, public-sector analysis, sustainability research, and applied machine learning. My work focuses on using data to understand complex problems, communicate evidence clearly, and develop practical, data-driven solutions.
 
