@@ -1,59 +1,62 @@
-/* Soft Taupe & Dusty Rose */
+/*******************************************************************************
+ * Themes
+ * Soft Taupe & Dusty Rose portfolio theme
+ ******************************************************************************/
 
-:root {
-  --portfolio-background: #fbf8f6;
-  --portfolio-surface: #ffffff;
-  --portfolio-text: #2d292a;
-  --portfolio-muted: #746b6c;
-  --portfolio-rose: #b4777c;
-  --portfolio-rose-dark: #925d64;
-  --portfolio-border: #e8deda;
+html {
+  &[data-theme="light"] {
+    --global-bg-color: #fbf6f4;
+    --global-code-bg-color: #f3ece9;
+    --global-text-color: #1d1d1d;
+    --global-text-color-light: #6b6868;
+    --global-theme-color: #b47c7c;
+    --global-hover-color: #b47c7c;
+    --global-hover-text-color: #ffffff;
+    --global-footer-bg-color: #1d1d1d;
+    --global-footer-text-color: #fbf6f4;
+    --global-footer-link-color: #ffffff;
+    --global-distill-app-color: #6b6868;
+    --global-divider-color: #e8ded9;
+    --global-card-bg-color: #ffffff;
 
-  --global-theme-color: #925d64;
-  --global-hover-color: #b4777c;
-  --global-text-color: #2d292a;
-  --global-bg-color: #fbf8f6;
-}
+    .social {
+      .contact-icons {
+        a {
+          color: white;
+          background-color: var(--global-theme-color);
+        }
+      }
+      .contact-note {
+        color: var(--global-text-color-light);
+      }
+    }
+  }
 
-body {
-  background-color: var(--portfolio-background);
-  color: var(--portfolio-text);
-}
+  &[data-theme="dark"] {
+    --global-bg-color: #1d1a19;
+    --global-code-bg-color: #2a2422;
+    --global-text-color: #e8e0dc;
+    --global-text-color-light: #b3a9a4;
+    --global-theme-color: #c99a9a;
+    --global-hover-color: #c99a9a;
+    --global-hover-text-color: #1d1a19;
+    --global-footer-bg-color: #14100f;
+    --global-footer-text-color: #e8e0dc;
+    --global-footer-link-color: #ffffff;
+    --global-distill-app-color: #b3a9a4;
+    --global-divider-color: #3a322f;
+    --global-card-bg-color: #2a2422;
 
-a {
-  color: var(--portfolio-rose-dark);
-  text-underline-offset: 3px;
-}
-
-a:hover {
-  color: var(--portfolio-rose);
-}
-
-.navbar .nav-link.active {
-  color: var(--portfolio-rose-dark) !important;
-}
-
-.card {
-  background-color: var(--portfolio-surface);
-  border-color: var(--portfolio-border);
-}
-
-.profile img {
-  border-radius: 10px;
-  box-shadow: 0 8px 28px rgba(45, 41, 42, 0.08);
-}
-
-.publications h2 {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 0.4rem;
-}
-
-.publications h2::after {
-  content: "";
-  display: block;
-  width: 4rem;
-  height: 2px;
-  margin-top: 0.35rem;
-  background: var(--portfolio-rose);
+    .social {
+      .contact-icons {
+        a {
+          color: var(--global-bg-color);
+          background-color: var(--global-theme-color);
+        }
+      }
+      .contact-note {
+        color: var(--global-text-color-light);
+      }
+    }
+  }
 }
