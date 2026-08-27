@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: A selection of my data science, machine learning, and analytics projects.
 nav: true
