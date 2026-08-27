@@ -1,43 +1,85 @@
-/* ==========================================
-   Portfolio typography
-   ========================================== */
+/* ==================================================
+   Soft Taupe & Dusty Rose portfolio design
+   ================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap");
+
+/* ---------- Colour palette ---------- */
+
+:root {
+  --portfolio-bg: #fbf8f6;
+  --portfolio-surface: #ffffff;
+  --portfolio-text: #2d292a;
+  --portfolio-muted: #72696b;
+  --portfolio-accent: #b4777c;
+  --portfolio-accent-dark: #8f5b62;
+  --portfolio-border: #e8deda;
+}
+
+/* ---------- Global page ---------- */
 
 body {
-  font-size: 17px;
-  line-height: 1.7;
+  background: var(--portfolio-bg);
+  color: var(--portfolio-text);
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 16.5px;
+  line-height: 1.72;
 }
 
 /* ---------- Main name / page titles ---------- */
 
 h1 {
-  font-size: clamp(2rem, 4vw, 2.65rem);
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  margin-bottom: 1.25rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(3rem, 6vw, 4.6rem);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.025em;
+  color: var(--portfolio-text);
+  margin-bottom: 0.5rem;
 }
 
-/* Major project sections */
+/* ---------- Section titles ---------- */
+
 h2 {
-  font-size: clamp(1.45rem, 2.5vw, 1.75rem);
-  font-weight: 650;
-  line-height: 1.3;
-  margin-top: 2.25rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(2rem, 3.5vw, 2.7rem);
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--portfolio-text);
+  margin-top: 2.4rem;
   margin-bottom: 1rem;
 }
 
-/* Your project pages mainly use ### headings */
 h3 {
-  font-size: clamp(1.3rem, 2.5vw, 1.55rem);
-  font-weight: 650;
-  line-height: 1.35;
-  margin-top: 2.25rem;
-  margin-bottom: 0.9rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(1.55rem, 2.5vw, 1.95rem);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--portfolio-text);
+  margin-top: 2.1rem;
+  margin-bottom: 0.8rem;
 }
 
+/* ---------- About-page subtitle ---------- */
+
+.post-header .desc,
+.subtitle,
+header .subtitle {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem) !important;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--portfolio-muted);
+  margin-top: 0;
+  margin-bottom: 1.7rem;
+}
+
+/* ---------- Body copy ---------- */
+
 p {
+  font-size: 1rem;
   line-height: 1.75;
-  margin-bottom: 1.15rem;
+  margin-bottom: 1.25rem;
 }
 
 li {
@@ -46,15 +88,97 @@ li {
   margin-bottom: 0.3rem;
 }
 
-/* Keep data tables compact */
+/* ---------- Links ---------- */
+
+a {
+  color: var(--portfolio-accent-dark);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--portfolio-accent);
+}
+
+/* ---------- Navigation ---------- */
+
+.navbar,
+.navbar a,
+.nav-link {
+  font-family: "DM Sans", Arial, sans-serif;
+}
+
+.nav-link {
+  font-size: 0.98rem;
+  font-weight: 500;
+}
+
+.navbar .active > .nav-link,
+.navbar .nav-link.active {
+  color: var(--portfolio-accent-dark) !important;
+}
+
+/* ---------- Profile ---------- */
+
+.profile img {
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(45, 41, 42, 0.08);
+}
+
+.profile .more-info {
+  color: var(--portfolio-muted);
+}
+
+/* ---------- Publications ---------- */
+
+.publications h2 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+}
+
+.publications h2::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 2px;
+  margin-top: 0.35rem;
+  background: var(--portfolio-accent);
+}
+
+/* ---------- Cards ---------- */
+
+.card {
+  background: var(--portfolio-surface);
+  border: 1px solid var(--portfolio-border);
+  border-radius: 10px;
+}
+
+/* ---------- Tables ---------- */
+
 table {
-  font-size: 0.95rem;
+  font-size: 0.94rem;
   line-height: 1.5;
 }
 
 /* ---------- Captions ---------- */
 
 .caption {
-  font-size: 0.9rem;
-  line-height: 1.55;
+  font-size: 0.88rem;
+  color: var(--portfolio-muted);
+  line-height: 1.5;
+}
+
+/* ---------- Back links ---------- */
+
+.mb-4 > a[href*="/projects/"],
+.mt-4 > a[href*="/projects/"] {
+  font-weight: 600;
+  color: var(--portfolio-accent-dark);
+  text-decoration: none;
+}
+
+.mb-4 > a[href*="/projects/"]:hover,
+.mt-4 > a[href*="/projects/"]:hover {
+  color: var(--portfolio-accent);
+  text-decoration: underline;
 }
