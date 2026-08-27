@@ -7,6 +7,10 @@ importance: 2
 category: nlp
 ---
 
+<div class="mb-4">
+  <a href="{{ '/projects/' | relative_url }}">← Back to projects</a>
+</div>
+
 I developed an end-to-end NLP pipeline for classifying customer reviews as **positive, neutral, or negative** using a fine-tuned DistilBERT transformer model. The project takes the analysis from raw review text through model fine-tuning and deployment, with an interactive Streamlit application and Power BI dashboard for exploring wider sentiment patterns.
 
 The project was developed for **ShopEase Europe, a fictional client scenario**, to explore how automated sentiment classification could help turn large volumes of customer feedback into usable business insight.
@@ -100,3 +104,7 @@ Key findings included:
 - **Live application:** [Open Streamlit app](https://amazon-44rsuekqigv6azxzyvsmbe.streamlit.app/)
 - **Source code:** [View project on GitHub](https://github.com/Shorller/Amazon)
 - **Power BI dashboard:** [View dashboard PDF](/assets/pdf/Amazon_Sentiment_Analysis.pdf)
+
+<div class="mb-4">
+  <a href="{{ '/projects/' | relative_url }}">← Back to projects</a>
+</div>

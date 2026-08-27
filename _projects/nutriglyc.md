@@ -7,6 +7,10 @@ importance: 4
 category: machine-learning
 ---
 
+<div class="mb-4">
+  <a href="{{ '/projects/' | relative_url }}">← Back to projects</a>
+</div>
+
 I developed a machine learning pipeline to explore whether dietary, clinical and lifestyle information could be used to predict post-meal glucose spike events. The project combined data-quality assessment, feature engineering, model comparison, hyperparameter tuning and SHAP explainability.
 
 The analysis was completed as part of a data science internship project using a structured glucose-spike dataset.
@@ -17,8 +21,8 @@ The aim was to determine whether information available around meal and patient c
 
 This required answering two questions:
 
-* How accurately could glucose spike events be classified from pre-outcome information?
-* Which variables contributed most strongly to the model's predictions?
+- How accurately could glucose spike events be classified from pre-outcome information?
+- Which variables contributed most strongly to the model's predictions?
 
 ### Data preparation
 
@@ -26,17 +30,17 @@ The original dataset contained **5,150 records and 28 variables** covering demog
 
 Data-quality assessment identified:
 
-* **1,243 missing values** across four variables
-* **150 duplicate records**
-* Outliers across 16 numerical variables
-* No invalid categorical values or numeric-range violations
+- **1,243 missing values** across four variables
+- **150 duplicate records**
+- Outliers across 16 numerical variables
+- No invalid categorical values or numeric-range violations
 
 After removing duplicates, imputing missing numerical values with medians and capping extreme values using IQR-based winsorisation, the cleaned dataset contained:
 
-* **5,000 records**
-* **28 variables**
-* **No missing values**
-* **No duplicate records**
+- **5,000 records**
+- **28 variables**
+- **No missing values**
+- **No duplicate records**
 
 The target remained reasonably balanced, with **2,683 non-spike events (53.7%)** and **2,317 spike events (46.3%)**.
 
@@ -54,12 +58,12 @@ This was an important part of the project because it ensured that model performa
 
 I created additional features to capture dietary and behavioural patterns, including:
 
-* Carbohydrate and glycaemic-load risk indicators
-* Insulin-to-carbohydrate ratio
-* Sugar-to-carbohydrate ratio
-* Carbohydrate-to-fibre ratio
-* Physical-activity and stress indicators
-* BMI categories
+- Carbohydrate and glycaemic-load risk indicators
+- Insulin-to-carbohydrate ratio
+- Sugar-to-carbohydrate ratio
+- Carbohydrate-to-fibre ratio
+- Physical-activity and stress indicators
+- BMI categories
 
 After feature engineering and target separation, the final modelling dataset contained **32 input features**.
 
@@ -87,11 +91,11 @@ I used **SHAP** to understand which features contributed most strongly to XGBoos
 
 The leading features by mean absolute SHAP value were:
 
-* **Carbohydrate intake - 32.4%**
-* **Insulin-to-carbohydrate ratio - 16.9%**
-* **Glycaemic load - 11.7%**
-* **Physical activity - 9.4%**
-* **Stress level - 5.5%**
+- **Carbohydrate intake - 32.4%**
+- **Insulin-to-carbohydrate ratio - 16.9%**
+- **Glycaemic load - 11.7%**
+- **Physical activity - 9.4%**
+- **Stress level - 5.5%**
 
 The top ten variables accounted for approximately **87.9% of total SHAP importance**.
 
@@ -106,11 +110,11 @@ The top ten variables accounted for approximately **87.9% of total SHAP importan
 
 ### Key analytical findings
 
-* Dietary variables, particularly carbohydrate intake and glycaemic load, contributed strongly to model predictions
-* The engineered **insulin-to-carbohydrate ratio** became one of the most influential model features
-* Physical activity also contributed meaningfully to the model
-* Several demographic variables, including age and gender, had relatively low SHAP importance
-* Removing post-outcome variables substantially improved the credibility of the prediction setup by preventing target leakage
+- Dietary variables, particularly carbohydrate intake and glycaemic load, contributed strongly to model predictions
+- The engineered **insulin-to-carbohydrate ratio** became one of the most influential model features
+- Physical activity also contributed meaningfully to the model
+- Several demographic variables, including age and gender, had relatively low SHAP importance
+- Removing post-outcome variables substantially improved the credibility of the prediction setup by preventing target leakage
 
 These findings describe relationships learned from this dataset and should not be interpreted as clinical guidance or causal effects.
 
@@ -123,4 +127,8 @@ These findings describe relationships learned from this dataset and should not b
 - **Live application:** [Open Streamlit app](https://nutriglyc-glucose-spike.streamlit.app/)
 - **Source code:** [View project on GitHub](https://github.com/Shorller/Amdari_P1)
 
-*Data Science Internship project.*
+_Data Science Internship project._
+
+<div class="mb-4">
+  <a href="{{ '/projects/' | relative_url }}">← Back to projects</a>
+</div>

@@ -7,6 +7,10 @@ importance: 5
 category: analytics
 ---
 
+<div class="mb-4">
+  <a href="{{ '/projects/' | relative_url }}">← Back to projects</a>
+</div>
+
 I developed a two-page **Power BI dashboard** to analyse company sales performance, profitability and customer demographics. The project focused on transforming transactional data into an interactive reporting tool that allows users to move between an executive sales overview and a more detailed customer-demography analysis.
 
 ### Sales performance
@@ -67,4 +71,8 @@ The dashboard includes:
 
 `Power BI` `DAX` `Data Visualisation` `Business Intelligence`
 
-*10Alytics Power BI training project.*
+_10Alytics Power BI training project._
+
+<div class="mb-4">
+  <a href="{{ '/projects/' | relative_url }}">← Back to projects</a>
+</div>
