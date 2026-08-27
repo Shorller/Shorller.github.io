@@ -84,19 +84,6 @@ body {
   line-height: 1.72;
 }
 
-/* About-page subtitle directly below the name */
-.post-header h4,
-.post-header .desc {
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 0.78rem !important;
-  font-weight: 400 !important;
-  line-height: 1.35 !important;
-  letter-spacing: 0 !important;
-  margin-top: 0.2rem !important;
-  margin-bottom: 1.4rem !important;
-  color: var(--global-text-color-light) !important;
-}
-
 /* Refined navbar */
 .navbar .nav-link {
   font-size: 0.96rem;
@@ -132,4 +119,16 @@ body {
   height: 2px;
   margin-top: 0.35rem;
   background-color: var(--global-theme-color);
+}
+
+/* Professional tagline beneath name */
+.about-tagline {
+  color: #925d64 !important;
+  font-family: "Segoe UI", Arial, sans-serif !important;
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  line-height: 1.4;
+  letter-spacing: 0.015em;
+  margin-top: 0.35rem;
+  margin-bottom: 1.4rem;
 }
