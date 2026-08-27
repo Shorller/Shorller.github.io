@@ -84,13 +84,13 @@ body {
   line-height: 1.72;
 }
 
-/* Smaller subtitle below your name */
-.post-header .desc,
-.post-header .subtitle,
-.subtitle {
-  font-size: 0.88rem !important;
+/* Smaller subtitle directly under the name */
+.post-header > .desc {
+  font-size: 0.82rem !important;
   line-height: 1.35;
   color: var(--global-text-color-light);
+  margin-top: 0.2rem;
+  margin-bottom: 1.35rem;
 }
 
 /* Refined navbar */
