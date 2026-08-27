@@ -1,0 +1,131 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+/* Built-in Sass modules */
+@use "sass:math";
+@use "sass:string";
+
+/* Theme configuration */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default: "930px" }}
+);
+
+/* Project partials */
+@use "themes";
+@use "layout";
+
+/* Core styles */
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+/* Other specialised styles */
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/* =========================================================
+   Oluwashola portfolio — Soft Taupe & Dusty Rose
+   ========================================================= */
+
+:root {
+  --global-bg-color: #fbf8f6;
+  --global-text-color: #2d292a;
+  --global-text-color-light: #746b6c;
+  --global-theme-color: #925d64;
+  --global-hover-color: #b4777c;
+  --global-card-bg-color: #ffffff;
+  --global-divider-color: #e8deda;
+  --global-code-bg-color: rgba(180, 119, 124, 0.08);
+}
+
+/* Keep dark mode functional */
+html[data-theme="dark"] {
+  --global-theme-color: #d59ca1;
+  --global-hover-color: #e7b8bc;
+}
+
+/* Elegant editorial headings */
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 5vw, 4.1rem);
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+h2 {
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+h3 {
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+  font-weight: 600;
+}
+
+/* Clean body typography */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.72;
+}
+
+/* Smaller subtitle below your name */
+.post-header .desc,
+.post-header .subtitle,
+.subtitle {
+  font-size: 1rem !important;
+  line-height: 1.4;
+  color: var(--global-text-color-light);
+}
+
+/* Refined navbar */
+.navbar .nav-link {
+  font-size: 0.96rem;
+  font-weight: 500;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+  color: var(--global-theme-color);
+}
+
+/* Softer profile image treatment */
+.profile img {
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(45, 41, 42, 0.1);
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 10px;
+}
+
+/* Publication heading accent */
+.publications h2:not(.bibliography) {
+  position: relative;
+  padding-bottom: 0.45rem;
+}
+
+.publications h2:not(.bibliography)::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 2px;
+  margin-top: 0.35rem;
+  background-color: var(--global-theme-color);
+}
