@@ -132,3 +132,54 @@ body {
   margin-top: 0.35rem;
   margin-bottom: 1.4rem;
 }
+
+/* ==============================
+   Projects page refinements
+   ============================== */
+
+/* Main Projects page title */
+.projects-page h1,
+body:has(.projects) h1 {
+  font-size: clamp(2.2rem, 4vw, 3rem) !important;
+  line-height: 1.05;
+  margin-bottom: 0.35rem;
+}
+
+/* Subtitle under Projects */
+.projects-page .post-description,
+body:has(.projects) .post-description {
+  color: #925d64 !important;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* Project card titles */
+.projects .card-title {
+  font-size: clamp(1.45rem, 2vw, 1.85rem) !important;
+  line-height: 1.15;
+  margin-bottom: 0.8rem;
+}
+
+/* Project card explanation text */
+.projects .card-text {
+  color: #746b6c !important;
+  font-size: 0.94rem;
+  line-height: 1.7;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+/* Give cards more breathing room */
+.projects .card-body {
+  padding: 1.35rem 1.35rem 1.5rem;
+}
+
+/* Subtle card polish */
+.projects .card {
+  border: 1px solid #e8deda;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(45, 41, 42, 0.06);
+}
