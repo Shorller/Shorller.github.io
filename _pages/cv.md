@@ -1,12 +1,230 @@
----
-layout: cv
-permalink: /cv/
-title: CV
-nav: true
-nav_order: 5
-cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
-cv_format: rendercv # options: rendercv, jsonresume
-description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
-toc:
-  sidebar: left
----
+cv:
+  name: Oluwashola Rufai-Hamzat
+  label: Data Scientist & Analyst
+  location: Glasgow, Scotland
+  image: ""
+  summary: Data scientist and analyst with a background in statistics, public-sector analysis, sustainability research, and applied machine learning. Experienced in statistical analysis, predictive modelling, NLP, forecasting, data visualisation, and mixed-methods research, with a focus on turning complex data into practical and clearly communicated insights.
+
+  social_networks:
+    - network: GitHub
+      username: Shorller
+
+    - network: LinkedIn
+      username: oluwashola-rufai-hamzat-a372b6102
+
+    - network: Google Scholar
+      username: -obN8JEAAAAJ
+
+  sections:
+    Experience:
+      - company: HM Revenue & Customs
+        position: Customer Service Advisor
+        location: United Kingdom
+        start_date: 2025-12
+        end_date: Present
+        summary: Provide customer support and casework across tax-related queries, using multiple internal systems to investigate cases, explain processes and outcomes, and manage competing priorities.
+        highlights:
+          - Investigate customer cases using multiple information sources and internal systems.
+          - Prioritise urgent and time-sensitive cases while maintaining service and quality standards.
+          - Communicate complex processes and decisions clearly to customers.
+
+      - company: Amdari.io
+        position: Data Science Intern
+        location: Remote
+        start_date: 2026-05
+        end_date: 2026-08
+        summary: Developed applied data science and machine learning projects covering forecasting, classification, NLP, model explainability, dashboards, and deployment.
+        highlights:
+          - Developed ward-level hospital bed occupancy forecasting using SARIMAX and XGBoost across 40 wards in five hospitals.
+          - Built an NLP sentiment classifier using fine-tuned DistilBERT, achieving 90.92% accuracy.
+          - Developed a tuned XGBoost glucose-spike classification model and used SHAP to explain model predictions.
+          - Built interactive Streamlit applications and Power BI dashboards to communicate analytical results.
+
+      - company: PJ's Foods
+        position: Quality Controller
+        location: United Kingdom
+        start_date: 2024-07
+        end_date: 2025-11
+        summary: Supported food-safety compliance, quality assurance, operational monitoring, and waste-reduction activities.
+        highlights:
+          - Conducted routine quality and compliance checks against operational standards.
+          - Analysed recurring waste issues and supported improvements including FIFO retraining, ordering controls, and waste tracking.
+          - Contributed to practical initiatives aimed at reducing avoidable food waste.
+
+      - company: Primark
+        position: Retail Assistant (Part-time)
+        location: United Kingdom
+        start_date: 2024-11
+        end_date: 2025-11
+        summary: Worked concurrently with my quality control role in a fast-paced retail environment, supporting customer service, sales, and day-to-day store operations.
+        highlights:
+          - Ranked as the top-performing retailer for customer sales per minute on more than three occasions.
+          - Achieved the No. 1 position on the retail-assistant leaderboard for promoting and selling reusable bags to customers.
+          - Supported customers with product queries, transactions, and purchasing decisions while maintaining efficient service during busy trading periods.
+
+      - company: Lagos State Civil Service Commission
+        position: Statistician II
+        location: Lagos, Nigeria
+        start_date: 2022-12
+        end_date: 2023-09
+        summary: Supported economic and administrative data collection, validation, analysis, and reporting within the public sector.
+        highlights:
+          - Validated survey returns and investigated inconsistencies before analysis.
+          - Helped harmonise data-collection templates and guidance for field staff.
+          - Improved data accuracy by approximately 15% through stronger validation and standardisation.
+
+      - company: Zowasel.com
+        position: Marketplace Specialist
+        location: Lagos, Nigeria
+        start_date: 2020-02
+        end_date: 2022-12
+        summary: Supported agricultural marketplace operations, supplier compliance, traceability, and communication with smallholder farmers and buyers.
+        highlights:
+          - Developed clearer produce-quality and traceability reporting covering moisture, appearance, chemical use, labour, and origin information.
+          - Introduced structured communication updates to improve supplier understanding of buyer requirements.
+          - Contributed to an approximately 45% reduction in produce rejection rates.
+
+    Education:
+      - institution: University of Glasgow
+        location: Glasgow, Scotland
+        area: Earth Futures Research
+        studyType: MSc
+        start_date: 2023
+        end_date: 2024
+        score: Merit
+        highlights:
+          - Statistical analysis using R
+          - Qualitative and mixed-methods research
+          - Sustainability and environmental research
+          - GIS and research design
+
+      - institution: University of Lagos
+        location: Lagos, Nigeria
+        area: Sociology
+        studyType: MSc
+        start_date: 2021
+        end_date: 2022
+        score: Merit
+
+      - institution: Obafemi Awolowo University
+        location: Nigeria
+        area: Demography and Social Statistics
+        studyType: BSc
+        start_date: 2014
+        end_date: 2018
+        score: First Class
+
+      - institution: Yaba College of Technology
+        location: Lagos, Nigeria
+        area: Statistics
+        studyType: National Diploma
+        start_date: 2011
+        end_date: 2013
+        score: Upper Credit
+
+    Skills:
+      - name: Data Analysis & Statistics
+        icon: fa-solid fa-chart-line
+        keywords: "Python, R, SPSS, Stata, Excel, statistical analysis, logistic regression, hypothesis testing, survey analysis"
+
+      - name: Machine Learning
+        icon: fa-solid fa-brain
+        keywords: "scikit-learn, XGBoost, Random Forest, Logistic Regression, SARIMAX, model evaluation, feature engineering, hyperparameter tuning"
+
+      - name: NLP & Explainable AI
+        icon: fa-solid fa-language
+        keywords: "DistilBERT, Hugging Face Transformers, sentiment analysis, SHAP, text classification"
+
+      - name: Data Visualisation & Applications
+        icon: fa-solid fa-chart-column
+        keywords: "Power BI, Tableau, Streamlit, Plotly, Matplotlib"
+
+      - name: Research
+        icon: fa-solid fa-magnifying-glass-chart
+        keywords: "Quantitative research, qualitative research, mixed methods, policy analysis, literature review, thematic analysis, NVivo, Kumu"
+
+      - name: Data & Programming
+        icon: fa-solid fa-code
+        keywords: "Python, SQL, pandas, NumPy, Git, GitHub"
+
+    Projects:
+      - name: Hospital Bed Occupancy Forecasting & Capacity Management
+        summary: Developed ward-level bed occupancy forecasting and capacity alerting across 40 wards in five hospitals using SARIMAX and XGBoost.
+        highlights:
+          - 7, 14, and 30-day ward-level forecasting
+          - SARIMAX and XGBoost model comparison
+          - Streamlit capacity alerts and model monitoring
+
+      - name: Amazon Reviews Sentiment Analysis
+        summary: Developed an end-to-end three-class NLP sentiment classification pipeline using fine-tuned DistilBERT, with Streamlit deployment and Power BI analysis.
+        highlights:
+          - 90.92% classification accuracy
+          - DistilBERT and Hugging Face Transformers
+          - Streamlit and Power BI deployment
+
+      - name: Hotel Haven
+        summary: Developed and tuned a Random Forest model to predict hotel booking cancellations and identify booking characteristics associated with cancellation risk.
+        highlights:
+          - 90.21% tuned model accuracy
+          - 95.39% ROC-AUC
+          - Feature engineering and business recommendations
+
+      - name: NutriGlyc AI
+        summary: Developed an XGBoost classification pipeline exploring glucose-spike prediction using dietary, clinical, and lifestyle information.
+        highlights:
+          - Tuned XGBoost classification
+          - SHAP model explainability
+          - Leakage prevention and feature engineering
+
+    Publications:
+      - title: "Behaviour-led pathways to resilient urban waste systems: a policy comparison of Lagos and London"
+        authors:
+          - Oluwashola Rufai-Hamzat
+          - Bianca Cavazzin
+        publisher: Environment and Urbanization
+        releaseDate: 2026
+        summary: Comparative research examining urban waste systems, behaviour, policy, and resilience across Lagos and London.
+
+    Community & Leadership:
+      - company: The Prince & Princess of Wales Hospice
+        position: Volunteer
+        location: Glasgow, Scotland
+        start_date: 2024
+        end_date: Present
+
+      - company: SHARPEN HER African Women Network
+        position: Volunteer
+        location: Glasgow, Scotland
+        start_date: 2023-12
+        end_date: Present
+
+      - company: Lagos Food Bank Initiative
+        position: Volunteer
+        location: Lagos, Nigeria
+        start_date: 2022
+        end_date: Present
+
+      - company: Glasgow University Environmental Sustainability Team
+        position: Community Fridge Volunteer
+        location: Glasgow, Scotland
+        start_date: 2024-03
+        end_date: 2024-09
+
+      - company: Nigerian Students' Society, University of Glasgow
+        position: Welfare Officer
+        location: Glasgow, Scotland
+        start_date: 2023-11
+        end_date: 2024-10
+
+    Certificates:
+      - name: Full-Stack Data Science
+        date: 2026
+        issuer: 10Alytics
+        icon: fa-solid fa-certificate
+
+    Languages:
+      - name: English
+        summary: Fluent
+
+      - name: Yoruba
+        summary: Native
