@@ -223,3 +223,61 @@ body:has(.projects) .post-description {
   line-height: 1.5;
   margin-bottom: 2rem;
 }
+
+/* =========================================
+   Publications page refinements
+   ========================================= */
+
+/* Main Publications heading */
+.publications h1,
+body:has(.publications) h1 {
+  font-size: clamp(2.2rem, 4vw, 3rem) !important;
+  line-height: 1.08 !important;
+  margin-bottom: 0.45rem !important;
+}
+
+/* Subtitle below Publications */
+.publications .post-description,
+body:has(.publications) .post-description {
+  color: #925d64 !important;
+  font-size: 0.88rem !important;
+  line-height: 1.55 !important;
+  margin-bottom: 1.8rem !important;
+}
+
+/* Search/filter field */
+.publications input[type="text"],
+.publications .search {
+  font-size: 0.88rem !important;
+  color: #746b6c !important;
+  border-color: #d8cdca !important;
+  border-radius: 7px !important;
+}
+
+/* Publication title */
+.publications .title {
+  color: #2d292a !important;
+  font-size: 1rem !important;
+  line-height: 1.55 !important;
+  font-weight: 500 !important;
+}
+
+/* Author and journal information */
+.publications .author,
+.publications .periodical {
+  color: #746b6c !important;
+  font-size: 0.88rem !important;
+  line-height: 1.55 !important;
+}
+
+/* Give each publication more breathing room */
+.publications ol.bibliography li {
+  margin-bottom: 2rem !important;
+}
+
+/* Year heading */
+.publications h2.bibliography {
+  color: #d8cdca !important;
+  font-size: 2rem !important;
+  font-weight: 500 !important;
+}
