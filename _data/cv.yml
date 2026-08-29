@@ -126,7 +126,8 @@ cv:
         studyType: MSc
         start_date: 2023
         end_date: 2024
-        score: Merit
+        highlights:
+          - "Classification: Merit"
 
       - institution: University of Lagos
         location: Lagos, Nigeria
@@ -134,7 +135,8 @@ cv:
         studyType: MSc
         start_date: 2021
         end_date: 2022
-        score: Merit
+        highlights:
+          - "Classification: Merit"
 
       - institution: Obafemi Awolowo University
         location: Nigeria
@@ -142,7 +144,8 @@ cv:
         studyType: BSc
         start_date: 2014
         end_date: 2018
-        score: First Class
+        highlights:
+          - "Classification: First Class"
 
       - institution: Yaba College of Technology
         location: Lagos, Nigeria
@@ -150,7 +153,8 @@ cv:
         studyType: National Diploma
         start_date: 2011
         end_date: 2013
-        score: Upper Credit
+        highlights:
+          - "Classification: Upper Credit"
 
     Skills:
       - name: Data Analysis & Statistics
