@@ -65,13 +65,13 @@ jobs:
           fi
           rendercv_dir=$(find assets -maxdepth 1 -type d -name "rendercv")
           if [ -z "$rendercv_dir" ]; then
-          echo "No RenderCV config directory found!"
-          exit 1
+            echo "No RenderCV config directory found!"
+            exit 1
           fi
           settings=$(find $rendercv_dir -maxdepth 1 -type f \( -name "settings.yaml" -o -name "settings.yml" \))
           if [ -z "$settings" ]; then
-          echo "Missing RenderCV config file!"
-          exit 1
+            echo "Missing RenderCV config file!"
+            exit 1
           fi
           rendercv render $cv_file --settings $settings || { echo "RenderCV failed!"; cat $settings; exit 1; }
           rm -f assets/rendercv/rendercv_output/*.typ || true
