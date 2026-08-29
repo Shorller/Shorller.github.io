@@ -183,33 +183,17 @@ cv:
 
     Projects:
       - name: Hospital Bed Occupancy Forecasting & Capacity Management
-        summary: Developed ward-level bed occupancy forecasting and capacity alerting across 40 wards in five hospitals using SARIMAX and XGBoost.
-        highlights:
-          - 7, 14, and 30-day ward-level forecasting
-          - SARIMAX and XGBoost model comparison
-          - Streamlit capacity alerts and model monitoring
+        summary: Developed a ward-level forecasting and capacity-monitoring system using SARIMAX and XGBoost across 40 wards in five simulated hospitals.
 
       - name: Amazon Reviews Sentiment Analysis
-        summary: Developed an end-to-end three-class NLP sentiment classification pipeline using fine-tuned DistilBERT, with Streamlit deployment and Power BI analysis.
-        highlights:
-          - 90.92% classification accuracy
-          - DistilBERT and Hugging Face Transformers
-          - Streamlit and Power BI deployment
+        summary: Developed and deployed a DistilBERT sentiment classifier for customer reviews, supported by an interactive Streamlit application and Power BI analysis.
 
       - name: Hotel Haven
-        summary: Developed and tuned a Random Forest model to predict hotel booking cancellations and identify booking characteristics associated with cancellation risk.
-        highlights:
-          - 90.21% tuned model accuracy
-          - 95.39% ROC-AUC
-          - Feature engineering and business recommendations
+        summary: Built a Random Forest model to predict hotel booking cancellations and identify booking characteristics associated with cancellation risk.
 
       - name: NutriGlyc AI
-        summary: Developed an XGBoost classification pipeline exploring glucose-spike prediction using dietary, clinical, and lifestyle information.
-        highlights:
-          - Tuned XGBoost classification
-          - SHAP model explainability
-          - Leakage prevention and feature engineering
-
+        summary: Developed an XGBoost classification pipeline with SHAP explainability to analyse factors associated with post-meal glucose spike predictions.
+    
     Publications:
       - title: "Behaviour-led pathways to resilient urban waste systems: a policy comparison of Lagos and London"
         authors:
