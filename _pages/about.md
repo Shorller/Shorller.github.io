@@ -7,16 +7,14 @@ subtitle:
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
     <p>Glasgow, Scotland</p>
 
-news: false # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+news: false
+selected_papers: false
+social: true
 ---
-
-# Oluwashola Rufai
 
 <h5 class="about-tagline">Data Scientist & Analyst | Statistics · Machine Learning · Sustainability</h5>
 
