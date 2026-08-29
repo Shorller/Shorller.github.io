@@ -30,4 +30,5 @@ This portfolio brings together my data science projects, research, and practical
 Feel free to explore & don't hesitate to get in touch if you'd like to connect.
 
 _Cheers!_
-Shola
+
+<p class="about-signature">Shola</p>
