@@ -51,9 +51,20 @@ cv:
           - Analysed recurring waste issues and supported improvements including FIFO retraining, ordering controls, and waste tracking.
           - Contributed to practical initiatives aimed at reducing avoidable food waste.
 
+      - company: Primark
+        position: Retail Assistant (Part-time)
+        location: United Kingdom
+        start_date: 2024-11
+        end_date: 2025-11
+        summary: Worked concurrently with my quality control role in a fast-paced retail environment, supporting customer service, sales, and day-to-day store operations.
+        highlights:
+          - Ranked as the top-performing retailer for customer sales per minute on more than three occasions.
+          - Achieved the No. 1 position on the retail-assistant leaderboard for promoting and selling reusable bags to customers.
+          - Supported customers with product queries, transactions, and purchasing decisions while maintaining efficient service during busy trading periods.
+
       - company: Lagos State Civil Service Commission
         position: Statistician II
-        location: Lagos
+        location: Lagos, Nigeria
         start_date: 2022-12
         end_date: 2023-09
         summary: Supported economic and administrative data collection, validation, analysis, and reporting within the public sector.
@@ -64,7 +75,7 @@ cv:
 
       - company: Zowasel.com
         position: Marketplace Specialist
-        location: Lagos
+        location: Lagos, Nigeria
         start_date: 2020-02
         end_date: 2022-12
         summary: Supported agricultural marketplace operations, supplier compliance, traceability, and communication with smallholder farmers and buyers.
@@ -111,15 +122,6 @@ cv:
         end_date: 2013
         score: Upper Credit
 
-    Publications:
-      - title: "Behaviour-led pathways to resilient urban waste systems: a policy comparison of Lagos and London"
-        authors:
-          - Oluwashola Rufai-Hamzat
-          - Bianca Cavazzin
-        publisher: Environment and Urbanization
-        releaseDate: 2026
-        summary: Comparative research examining urban waste systems, behaviour, policy, and resilience across Lagos and London.
-
     Skills:
       - name: Data Analysis & Statistics
         icon: fa-solid fa-chart-line
@@ -147,32 +149,72 @@ cv:
 
     Projects:
       - name: Hospital Bed Occupancy Forecasting & Capacity Management
-        summary: Developed ward-level occupancy forecasting and capacity-alerting across 40 wards in five hospitals using SARIMAX and XGBoost, with an interactive Streamlit decision-support application.
+        summary: Developed ward-level bed occupancy forecasting and capacity alerting across 40 wards in five hospitals using SARIMAX and XGBoost.
         highlights:
           - 7, 14, and 30-day ward-level forecasting
           - SARIMAX and XGBoost model comparison
-          - Capacity alerts and forecast monitoring
+          - Streamlit capacity alerts and model monitoring
 
       - name: Amazon Reviews Sentiment Analysis
-        summary: Built an end-to-end three-class NLP sentiment analysis system using fine-tuned DistilBERT, with Streamlit deployment and Power BI analysis.
+        summary: Developed an end-to-end three-class NLP sentiment classification pipeline using fine-tuned DistilBERT, with Streamlit deployment and Power BI analysis.
         highlights:
           - 90.92% classification accuracy
           - DistilBERT and Hugging Face Transformers
           - Streamlit and Power BI deployment
 
       - name: Hotel Haven
-        summary: Developed a Random Forest model to predict hotel booking cancellations and identify higher-risk booking characteristics.
+        summary: Developed and tuned a Random Forest model to predict hotel booking cancellations and identify booking characteristics associated with cancellation risk.
         highlights:
           - 90.21% tuned model accuracy
           - 95.39% ROC-AUC
           - Feature engineering and business recommendations
 
       - name: NutriGlyc AI
-        summary: Developed an XGBoost classification pipeline exploring glucose-spike prediction using dietary, lifestyle, and clinical information.
+        summary: Developed an XGBoost classification pipeline exploring glucose-spike prediction using dietary, clinical, and lifestyle information.
         highlights:
           - Tuned XGBoost classification
           - SHAP model explainability
           - Leakage prevention and feature engineering
+
+    Publications:
+      - title: "Behaviour-led pathways to resilient urban waste systems: a policy comparison of Lagos and London"
+        authors:
+          - Oluwashola Rufai-Hamzat
+          - Bianca Cavazzin
+        publisher: Environment and Urbanization
+        releaseDate: 2026
+        summary: Comparative research examining urban waste systems, behaviour, policy, and resilience across Lagos and London.
+
+    Community & Leadership:
+      - company: The Prince & Princess of Wales Hospice
+        position: Volunteer
+        location: Glasgow, Scotland
+        start_date: 2024
+        end_date: Present
+
+      - company: SHARPEN HER African Women Network
+        position: Volunteer
+        location: Glasgow, Scotland
+        start_date: 2023-12
+        end_date: Present
+
+      - company: Lagos Food Bank Initiative
+        position: Volunteer
+        location: Lagos, Nigeria
+        start_date: 2022
+        end_date: Present
+
+      - company: Glasgow University Environmental Sustainability Team
+        position: Community Fridge Volunteer
+        location: Glasgow, Scotland
+        start_date: 2024-03
+        end_date: 2024-09
+
+      - company: Nigerian Students' Society, University of Glasgow
+        position: Welfare Officer
+        location: Glasgow, Scotland
+        start_date: 2023-11
+        end_date: 2024-10
 
     Certificates:
       - name: Full-Stack Data Science
