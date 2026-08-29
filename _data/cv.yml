@@ -127,7 +127,7 @@ cv:
         start_date: 2023
         end_date: 2024
         highlights:
-          - "Classification: Merit"
+          - "Merit"
 
       - institution: University of Lagos
         location: Lagos, Nigeria
@@ -136,7 +136,7 @@ cv:
         start_date: 2021
         end_date: 2022
         highlights:
-          - "Classification: Merit"
+          - "Merit"
 
       - institution: Obafemi Awolowo University
         location: Nigeria
@@ -145,7 +145,7 @@ cv:
         start_date: 2014
         end_date: 2018
         highlights:
-          - "Classification: First Class"
+          - "First Class"
 
       - institution: Yaba College of Technology
         location: Lagos, Nigeria
@@ -154,7 +154,7 @@ cv:
         start_date: 2011
         end_date: 2013
         highlights:
-          - "Classification: Upper Credit"
+          - "Upper Credit"
 
     Skills:
       - name: Data Analysis & Statistics
