@@ -1,21 +1,22 @@
 ---
+
 layout: about
 title: About
 permalink: /
 subtitle: Data Scientist & Analyst | Statistics · Machine Learning · Sustainability
 
 profile:
-align: right
-image: prof_pic.jpg
-image_circular: false # crops the image to make it circular
-more_info: > <p>Glasgow, Scotland</p>
+  align: right
+  image: prof_pic.jpg
+  image_circular: false # crops the image to make it circular
+  more_info: > <p>Glasgow, Scotland</p>
 
 news: false # includes a list of news items
 selected_papers: false # publications are presented on the dedicated Publications page
 social: true # includes social icons at the bottom of the page
 ---
 
-# Oluwashola Rufai
+# Oluwashola Rufai-Hamzat
 
 I'm a data scientist and analyst with a background in statistics, public-sector analysis, sustainability research, and applied machine learning. I use data to understand complex problems, communicate evidence clearly, and develop practical, data-driven solutions.
 
