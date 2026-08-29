@@ -4,8 +4,8 @@ permalink: /cv/
 title: CV
 nav: true
 nav_order: 5
-cv_format: rendercv
-cv_pdf:
+cv_pdf: /assets/pdf/example_pdf.pdf # you can also use external links here
+cv_format: rendercv # options: rendercv, jsonresume
 description: Professional experience, education, technical skills, projects, research, and community involvement.
 toc:
   sidebar: left
