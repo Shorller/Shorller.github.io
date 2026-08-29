@@ -1,19 +1,21 @@
 ---
 layout: page
-title: community
+title: Community
 permalink: /community/
-description: Community involvement, volunteering, and leadership.
+description: Community involvement, volunteering, and leadership across social welfare, inclusion, sustainability, and student support.
 nav: true
 nav_order: 4
 ---
-
-# Community Involvement & Leadership
 
 Alongside my professional and academic work, I contribute to community initiatives spanning social welfare, inclusion, sustainability, food security, and student support.
 
 ## The Prince & Princess of Wales Hospice
 
-**Volunteer | Glasgow, Scotland | 2024 - Present**
+<div class="community-meta">
+  <span>Volunteer</span>
+  <span>Glasgow, Scotland</span>
+  <span>2024 - Present</span>
+</div>
 
 I support the hospice across a range of community-facing activities, including reception and clerical support, fundraising, retail, and facilities.
 
@@ -25,7 +27,11 @@ I support the hospice across a range of community-facing activities, including r
 
 ## SHARPEN HER African Women Network
 
-**Volunteer | Glasgow, Scotland | December 2023 - Present**
+<div class="community-meta">
+  <span>Volunteer</span>
+  <span>Glasgow, Scotland</span>
+  <span>December 2023 - Present</span>
+</div>
 
 I contribute to community engagement and advocacy initiatives supporting African women and promoting greater social inclusion.
 
@@ -36,13 +42,23 @@ I contribute to community engagement and advocacy initiatives supporting African
 
 ## Lagos Food Bank Initiative
 
-**Volunteer | 2022 - Present**
+<div class="community-meta">
+  <span>Volunteer</span>
+  <span>Lagos, Nigeria</span>
+  <span>2022 - Present</span>
+</div>
 
 I support poverty-alleviation and community outreach initiatives focused on vulnerable households and communities.
 
 My involvement has included participating in outreach activities as well as contributing to research used to better understand programme needs and outcomes. Research activities have included interviews, data collection, transcription, and analysis, including work involving approximately 1,200 women during one programme quarter.
 
 ## Glasgow University Environmental Sustainability Team (GUEST)
+
+<div class="community-meta">
+  <span>Community Fridge Volunteer</span>
+  <span>Glasgow, Scotland</span>
+  <span>March - September 2024</span>
+</div>
 
 **Community Fridge Volunteer | Glasgow, Scotland | March - September 2024**
 
@@ -56,7 +72,11 @@ I supported a community food-sharing initiative designed to redistribute surplus
 
 ## Nigerian Students' Society, University of Glasgow
 
-**Welfare Officer | Glasgow, Scotland | 2023 - 2024**
+<div class="community-meta">
+  <span>Welfare Officer</span>
+  <span>Glasgow, Scotland</span>
+  <span>November 2023 – October 2024</span>
+</div>
 
 I supported student welfare and helped strengthen community connections among Nigerian students.
 

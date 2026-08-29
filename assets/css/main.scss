@@ -281,3 +281,81 @@ body:has(.publications) .post-description {
   font-size: 2rem !important;
   font-weight: 500 !important;
 }
+
+/* =========================================
+   Community page
+   ========================================= */
+
+/* Main page title */
+body:has(.community-meta) h1 {
+  font-size: clamp(2.2rem, 4vw, 3rem) !important;
+  line-height: 1.08 !important;
+  margin-bottom: 0.4rem !important;
+}
+
+/* Page subtitle */
+body:has(.community-meta) .post-description {
+  color: #925d64 !important;
+  font-size: 0.9rem !important;
+  line-height: 1.55 !important;
+  margin-bottom: 1.8rem !important;
+}
+
+/* Organisation names */
+body:has(.community-meta) h2 {
+  font-size: clamp(1.45rem, 2.4vw, 1.9rem) !important;
+  line-height: 1.2 !important;
+  font-weight: 500 !important;
+  margin-top: 2.4rem !important;
+  margin-bottom: 0.55rem !important;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid #e8deda;
+}
+
+/* Role / location / dates */
+.community-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin: 0.7rem 0 1.25rem;
+  color: #925d64;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.community-meta span:nth-child(2) {
+  text-align: center;
+}
+
+.community-meta span:nth-child(3) {
+  text-align: right;
+}
+
+/* Community body copy */
+body:has(.community-meta) p,
+body:has(.community-meta) li {
+  font-size: 0.94rem;
+  line-height: 1.7;
+}
+
+body:has(.community-meta) ul {
+  margin-top: 0.65rem;
+  margin-bottom: 1.6rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .community-meta {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .community-meta span:nth-child(2),
+  .community-meta span:nth-child(3) {
+    text-align: left;
+  }
+
+  body:has(.community-meta) h2 {
+    font-size: 1.45rem !important;
+  }
+}
