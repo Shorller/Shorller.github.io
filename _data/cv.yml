@@ -185,37 +185,6 @@ cv:
         releaseDate: 2026
         summary: Comparative research examining urban waste systems, behaviour, policy, and resilience across Lagos and London.
 
-    Community & Leadership:
-      - company: The Prince & Princess of Wales Hospice
-        position: Volunteer
-        location: Glasgow, Scotland
-        start_date: 2024
-        end_date: Present
-
-      - company: SHARPEN HER African Women Network
-        position: Volunteer
-        location: Glasgow, Scotland
-        start_date: 2023-12
-        end_date: Present
-
-      - company: Lagos Food Bank Initiative
-        position: Volunteer
-        location: Lagos, Nigeria
-        start_date: 2022
-        end_date: Present
-
-      - company: Glasgow University Environmental Sustainability Team
-        position: Community Fridge Volunteer
-        location: Glasgow, Scotland
-        start_date: 2024-03
-        end_date: 2024-09
-
-      - company: Nigerian Students' Society, University of Glasgow
-        position: Welfare Officer
-        location: Glasgow, Scotland
-        start_date: 2023-11
-        end_date: 2024-10
-
     Certificates:
       - name: Full-Stack Data Science
         date: 2026
