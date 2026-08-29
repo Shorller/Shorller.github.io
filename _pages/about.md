@@ -24,4 +24,8 @@ My earlier experience includes working as a Statistician in the civil service an
 
 My academic background combines quantitative and social research. I hold a First Class BSc in Demography and Social Statistics, an MSc in Sociology (Merit), and an MSc in Earth Futures Research (Merit) from Obafemi Awolowo University, the University of Lagos, and the University of Glasgow, respectively. My research on behaviour-led pathways to resilient urban waste systems was published in *Urban Research & Practice*.
 
-This portfolio brings together my data science projects, published research, and practical applications of statistical analysis and machine learning. You can explore my projects, publications, community involvement, and CV through the sections above.
+This portfolio brings together my data science projects, published research, and practical applications of statistical analysis and machine learning. 
+
+Feel free to explore my projects and research, or get in touch if you’d like to connect.
+
+_Cheers!_
