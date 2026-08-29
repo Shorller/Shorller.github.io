@@ -87,41 +87,37 @@ cv:
       - company: The Prince & Princess of Wales Hospice
         position: Volunteer
         location: Glasgow, Scotland
-        start_date: 2024-07
-        end_date: Present
-        summary: Support the hospice's fundraising and community engagement activities, including event organisation, donor communication, and awareness campaigns.
-
-      - company: The Prince & Princess of Wales Hospice
-        position: Volunteer
-        location: Glasgow, Scotland
-        start_date: 2024-07
-        end_date: Present
-        highlights:
-          - Volunteered in a hospice care setting supporting patients and staff
+        start_date: 2024
+        end_date: present
+        summary: Support hospice operations through reception, fundraising events, charity retail, donation activities, and general facilities support.
 
       - company: SHARPEN HER African Women Network
         position: Volunteer
         location: Glasgow, Scotland
         start_date: 2023-12
-        end_date: Present
+        end_date: present
+        summary: Support community consultations and advocacy by facilitating dialogue, gathering community perspectives, and contributing to initiatives promoting inclusion and the interests of African women.
 
       - company: Lagos Food Bank Initiative
         position: Volunteer
         location: Lagos, Nigeria
         start_date: 2022
-        end_date: Present
+        end_date: present
+        summary: Support poverty-alleviation and food-security initiatives through community outreach, alongside research activities including interviews, data collection, transcription, and analysis.
 
       - company: Glasgow University Environmental Sustainability Team
         position: Community Fridge Volunteer
         location: Glasgow, Scotland
         start_date: 2024-03
         end_date: 2024-09
+        summary: Supported surplus-food redistribution by collecting and inspecting donations, managing stock rotation, and maintaining food-safety and hygiene standards.
 
       - company: Nigerian Students' Society, University of Glasgow
         position: Welfare Officer
         location: Glasgow, Scotland
         start_date: 2023-11
-        end_date: 2024-10
+        end_date: 2024
+        summary: Supported student welfare and community building through wellbeing initiatives, workshops, social activities, cultural events, and student engagement.
         
     Education:
       - institution: University of Glasgow
