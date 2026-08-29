@@ -60,8 +60,6 @@ My involvement has included participating in outreach activities as well as cont
   <span>March - September 2024</span>
 </div>
 
-**Community Fridge Volunteer | Glasgow, Scotland | March - September 2024**
-
 I supported a community food-sharing initiative designed to redistribute surplus food and reduce avoidable food waste.
 
 - Collected surplus food from local businesses, supermarkets, and other contributors.
