@@ -26,6 +26,6 @@ My academic background combines quantitative and social research. I hold a First
 
 This portfolio brings together my data science projects, published research, and practical applications of statistical analysis and machine learning. 
 
-Feel free to explore or get in touch if you’d like to connect.
+Feel free to explore. Don't hesitate to get in touch if you’d like to connect.
 
 _Cheers!_
